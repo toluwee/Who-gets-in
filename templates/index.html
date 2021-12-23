@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>Predict Chance of Graduate School Admission</h1>
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="post">
+            <input type="text" name="gre_score" placeholder="GRE Score" required="required" />
+            <input type="text" name="toefl_score" placeholder="TOEFL Score" required="required" />
+            <input type="text" name="university_rating" placeholder="University Rating" required="required" />
+            <input type="text" name="SOP" placeholder="Statement of Purpose" required="required" />
+            <input type="text" name="LOR" placeholder="Letter of recommendation" required="required" />
+            <input type="text" name="CGPA" placeholder="CGPA" required="required" />
+            <input type="text" name="Research" placeholder="Research" required="required" />
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <br>
+        <br>
+        <h4>{{ prediction_text }}</h4>
+
+    </div>
+
+
+</body>
+
+</html>
