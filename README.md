@@ -1,4 +1,4 @@
-# Who-gets-in
+# Who gets in
 ### Deploying a Flask Machine Learning Application in AWS
 
 ## Project Overview
