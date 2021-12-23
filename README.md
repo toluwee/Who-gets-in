@@ -27,14 +27,13 @@ The parameters included are :
 
 ## Project Steps
 
-1. Download the IMDb dataset.
-2. Preparing and Processing the data.
-3. Upload the processed data to S3.
-4. Train a recurrent neural network model.
-5. Deploy the model.
-6. Test the trained model.
-7. Deploy the model for the web app.
+1. Download the dataset.
+2. Train an XGBoost model.
+3. Create the web app files
+4. Create an EC2 instance
+5. Upload all model artifacts to cloud server
+6. Deploy the model.
 
 ## Project Output
-<!-- <img src="App Test 1.png"> -->
+<img src="output.png">
 
